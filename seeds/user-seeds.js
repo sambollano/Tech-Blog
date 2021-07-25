@@ -13,8 +13,9 @@ const userdata = [
     password: "p@ssword10"
     },
     {
-    username: 'chelseacollins31',
-    email: 'chelseacollins@test.com',
+        
+    username: 'tinastewart31',
+    email: 'tinastewart@test.com',
     password: 'password123'
   },
   {

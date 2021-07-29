@@ -12,7 +12,11 @@ Writing about tech can be just as important as making it. Developers spend plent
 * SQL
 
 ## Website
-* https://sambollano.github.io/Tech-Blog/
+--Github
+** https://sambollano.github.io/Tech-Blog/
+
+--Heroku
+** https://techblog3001.herokuapp.com/
 
 ## Contribution
 Made with ❤️ by Samantha Arellano

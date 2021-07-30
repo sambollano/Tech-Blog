@@ -2,9 +2,11 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const session = require('express-session');
-const SequelizeStore = require('connect-session-sequelize')(session.store);
+const sequelize = require("./config/connection");
+
 const helpers = require('./utils/helpers');
 const router = require("express").Router();
+
 
 const sess = {
   secret: 'Super secret secret',
@@ -13,9 +15,6 @@ const sess = {
   },
   resave: false,
   saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
 };
 
 const app = express();

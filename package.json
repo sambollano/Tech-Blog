@@ -17,10 +17,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest",
-    "start": "server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "test": "echo",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

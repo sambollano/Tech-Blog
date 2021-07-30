@@ -18,7 +18,7 @@ const sess = {
 };
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5501;
 const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
@@ -26,7 +26,6 @@ app.set('view engine', 'handlebars');
 
 app.use(session(sess));
 app.use(express.json());
-app.use(require("./controllers/"));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // turn on connection to database and server
@@ -34,6 +33,4 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
-
-// turn on routes
-// app.use(routes);
+app.use(routes);

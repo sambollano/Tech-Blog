@@ -1,10 +1,10 @@
 const path = require('path');
-const express = require('express');
-const session = require('express-session');
-const exphbs = require('express-handlebars');
-
-const app = express();
-const PORT = process.env.PORT || 3001;
+ const express = require('express');
+ const exphbs = require('express-handlebars');
+ const bodyParser = require('body-parser');
+ const handlebars = require('handlebars');
+ const app = express();
+const PORT = process.env.PORT || 5501;
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

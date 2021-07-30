@@ -16,10 +16,5 @@ if (process.env.JAWSDB_URL) {
           decimalNumbers: true,
         },
       });
-      db.connect(function(err) {
-        if (err) throw err
-        console.log("You have connected to MySQL " + connection.threadId)
-    });
-    }
-    
+}
     module.exports = connnection; 

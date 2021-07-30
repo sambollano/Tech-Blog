@@ -81,7 +81,7 @@ router.get('/post/:id', (req, res) => {
         post,
         loggedIn: req.session.loggedIn
       })
-    } else {
+    }else {
       res.render("single-post", {
         post,
         loggedIn: req.session.loggedIn,

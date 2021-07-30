@@ -1,0 +1,85 @@
+* {
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+
+nav a {
+    margin: auto;
+}
+
+nav button {
+    margin: auto;
+}
+
+header {
+    background-color: teal;
+    border-bottom: 1px solid;
+    align-items: center;
+    padding: auto;
+    width: auto;
+}
+
+form > div {
+    margin-bottom: 2%;
+}
+
+body {
+    background-color: violet;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: auto;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display:block;
+}
+
+main {
+    padding: 0%;
+}
+
+.content-div {
+    min-height: 78px;
+}
+
+.post-top {
+    background-color: tomato;
+    display:flex;
+    justify-content: space-between;
+}
+
+.post {
+    border: solid;
+    margin: 6px;
+    border-radius: 25px;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form {
+    display: none;
+}
+
+.meta {
+    margin: 8px;
+}
+
+.post-title {
+    margin: 7px;
+}
+.post-info {
+    margin: 7px;
+}
+.content-div {
+    margin: 7px;
+}

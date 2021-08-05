@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  html {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    background-color: lightcyan;
+    position: relative;
+  }
+  
+  body {
+    background-color: lightgray;
+  }
+  
+  .main-body {
+    min-height: 100vh;
+  }
+  
+  a:hover {
+    color: lightpink;
+  }
+  
+  a {
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bold;
+    transition: color .1s;
+  }
+  
+  button {
+    background-color: #A7C0CD;
+    border: 0;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color:lightgray;
+    color: darkblue;
+  }
+  
+  .dashboard-btn {
+    color: #111738;
+  } 
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #111738;
+  }
+  
+  header h1 {
+    font-size: 70px;
+    font-family: 'Arial';
+  }
+  
+  textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+  
+  textarea {
+    max-width: 60%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background-color:#111738;
+    color: #FE7860;
+  }
+  
+  .delete-post-btn {
+    background-color:rgb(62, 23, 151);
+    color: rgb(255, 255, 255);
+  }
+  
+  .delete-post-btn:hover {
+    background-color:rgb(0, 0, 0, .6);
+    color: lightcyan;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: lightblue;
+  }
+  
+  .sv-post {
+      background-color: #111738;
+      color: azure;
+  }
+  
+  .add-comment {
+      background-color: #111738;
+      color: white;
+  }
+  
+  .upvote-btn {
+    background-color:rgba(255, 255, 255, 0.6);
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .edit {
+    border-radius: 10px;
+    padding-top: 5px;
+    background-color: #111738;
+  }
+  
+  .upvote-btn {
+    background-color: #111738;
+    color: lightblue;
+  }
+  
+  .upvote-btn:hover {
+    background-color: saddlebrown;
+    color: rgb(255, 255, 255);
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color:lightgrey;
+    color: rgb(0, 0, 0);
+    width: 100vw;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: lightgrey;
+    color: #111738;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+  }
+  
+  #comment-body {
+    opacity: 80%;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+  }
+  
+  .submit-btn {
+    color: rgb(255, 255, 255);
+    background-color: #111738;
+  }
+  
+  
+  h2,
+  label,
+  li
+  {
+    color: black;
+  }
+  
+  .new-post {
+    position: right;
+    align-items: right;
+  }
+  
+  .new-post-form input {
+    width: 300px;
+  }
+  
+  .edit-title {
+    color: black;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+    color: black;
+  }
+  
+  .edit-post-form a {
+    color: black;
+  }
+  
+  .edit-post-form a:hover{
+    color: lightskyblue;
+  }
+  
+  .btn {
+    color: white;
+    background-color: #111738;
+    font-weight: bold;
+  }
+  
+  .btn:hover{
+    color: lightpink;
+  }
+  
+  
+  
+  
+  .post {
+    background-color: #A7C0CD;
+    margin: auto;
+    justify-content: center;
+    color: #111738;
+    border: 1px solid #ffffff;
+    opacity: 80%;
+  }
+  
+  .post p {
+    color: rgb(253, 247, 247);
+  }
+  
+  .post a{
+    color: #ffffff;
+  }
+  
+  .card a:hover {
+    color: #ffffff;
+  
+  }
+  
+  .meta a {
+    color: #ffffff;
+  
+  }
+  
+  .meta a:hover {
+    color: #ffffff;
+  
+  }
+  
+  .card {
+    opacity: 100%;
+    background-color: skyblue;
+  }
+  
+  footer a:hover{
+    color: lightskyblue;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #111738;
+    border-top: 1px solid #ffffff;
+    padding: 1%;
+    text-decoration: none;
+  }
+  
+  footer h3 {
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }

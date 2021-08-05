@@ -1,31 +1,4 @@
-const signup = document.querySelector(".signup-from");
-const login = document.querySelector(".login-form");
-const registerBtn = document.querySelector(".register-btn");
-
-
-async function signUpFormHandler(event) {
-    event.preventDefault();
-
-    const username = document.querySelector("#username-signup").value.trim();
-    const email = document.querySelector("#email-signup").value.trim();
-    const password = document.querySelector("#password-signup").valus.trim();
-
-    if (username && email && password) {
-        const responce = await fetch("/api/users", {
-            method: "post",
-            body: JSON.stringify({
-                username,
-                email,
-                password,
-            }),
-            header: { "Content-Type": "application/json" },
-        })
-        if (response.ok) {
-            document.location.replace("/dashboard");
-        }
-        }
-    }
-  
+const { response } = require("express");
 
 async function loginFormHandler(event) {
     event.preventDefault();
@@ -44,19 +17,40 @@ async function loginFormHandler(event) {
         });
   
         if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/dashboard');
         } else {
         alert(response.statusText);
       }
     }
   }
 
-document.querySelector("register-btn").addEventListener("click", function () {
-    signup.style.display = "block";
-    login.style.display = "none";
-    registerBtn.style.display = "none";
-});
+async function signUpFormHandler(event) {
+    event.preventDefault();
 
+    const username = document.querySelector("#username-signup").value.trim();
+    const email = document.querySelector("#email-signup").value.trim();
+    const password = document.querySelector("#password-signup").valus.trim();
+
+    if (username && email && password) {
+        const responce = await fetch("/api/users", {
+            method: "post",
+            body: JSON.stringify({
+                username,
+                email,
+                password,
+            }),
+            header: { "Content-Type": "application/json" },
+        });
+        
+        if (response.ok) {
+            document.location.replace("/dashboard");
+        } else {
+            alert(response.statusText);
+        }
+        }
+    }
+
+    
 document
 .querySelector(".signup-form")
 .addEventListener("submit", signUpFormHandler);

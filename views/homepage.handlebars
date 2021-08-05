@@ -1,16 +1,7 @@
-<ul class="post-list" style = "list-style-type:none">
-  {{#if loggedIn}}
-  {{#each posts as |post|}}
-<li>
-  {{> post-info post }}
-</li>
-  {{/each}}
-</ul>
-{{else}}
-  {{#each posts as |post|}}
+<ol class="post-list">
+  {{#each post as |post|}}
   <li>
-   {{> post-info loggedPut post}} 
+    {{> post-content post }}
   </li>
   {{/each}}
-</ul>
-{{/if}}
+</ol>

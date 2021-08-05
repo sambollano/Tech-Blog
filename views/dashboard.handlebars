@@ -1,0 +1,36 @@
+
+{{#if posts.length}}
+<section>
+    <h2>Recent Posts</h2>
+    <div>
+        <ol>
+            {{#each posts as |post|}}
+            <li>
+                {{> post-content post }}
+                <button class="edit">
+                    <a href="/dashboard/edit/{{post.id}}">Edit Post</a>
+                </button>
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+</section>
+{{/if}}
+
+<section class="new-post float-left">
+    <h3>Create New Post</h3>
+
+    <form class="new-post-form">
+        <div>
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" name="post-title" />
+        </div>
+        <div>
+            <label for="post-url">Comment</label>
+            <input type="text" id="post-url" name="post-url" />
+        </div>
+        <button type="submit" class="btn">SUBMIT</button>
+    </form>
+</section>
+
+<script src="/javascript/post.js"></script>
